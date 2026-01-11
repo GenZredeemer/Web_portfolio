@@ -193,10 +193,10 @@ Search for these in `index.html` and replace:
 - ✉️ `yash.datar@example.com`
 - 📞 `+1234567890`
 - 📍 `Your City, Country`
-- 🐙 `github.com/yourusername`
+- 🐙 `github.com/GenZredeemer`
 - 💼 `linkedin.com/in/yourusername`
 - 🐦 `twitter.com/yourusername`
-- 📸 `instagram.com/yourusername`
+- 📸 `instagram.com/itsmeyash1105`
 
 ---
 

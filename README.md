@@ -218,7 +218,7 @@ This project is open source and available for personal use.
 **Yash Datar**
 
 - Website: [Your Website URL]
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@GenZredeemer](https://github.com/GenZredeemer)
 - LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourusername)
 
 ## 🙏 Acknowledgments
