@@ -1,0 +1,22 @@
+📄 RESUME PDF INSTRUCTIONS
+========================
+
+To enable the "Download Resume" feature on your website:
+
+1. Create or export your resume as a PDF file
+2. Name it "resume.pdf"
+3. Place it in this folder (assets/)
+4. The download button on your website will automatically work!
+
+Current path should be:
+Personal-Website/assets/resume.pdf
+
+Tip: Keep your PDF file size under 2MB for faster downloads.
+
+Alternative names you can use:
+- resume.pdf
+- YashDatar_Resume.pdf
+- CV.pdf
+
+If you use a different name, update the link in index.html:
+Line ~317: <a href="assets/YOUR_FILENAME.pdf" class="button" download>

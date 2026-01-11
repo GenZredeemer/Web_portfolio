@@ -1,36 +1,610 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: bisque;">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YD Website</title>
+    <meta name="description" content="Yash Datar's Personal Portfolio - Software Developer & Creative Thinker">
+    <title>Yash Datar | Portfolio</title>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rye&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rye&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link
-        rel="stylesheet"s
-        href="/intro_styles.css"
-        />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1 class="Title">
-        Yash Datar's portfolio
-    </h1>
-    <img src="assets/images/IMG_0632.jpg">
-    <hr class="hr">
-    <h2 class="Ending">
-        Let me take you on a ride to my universe !
-    </h2>
-    <div class="linkage">
-        <a href="/public/resume.html" style="padding-right: 20%;">Resúme</a>
-        <a href="/public/hobbies.html" style="padding-right: 16%;">Hobbies</a>
-        <a href="/public/MoreAboutMe.html">More About Me</a>
-    
-    </div>
-    
-    
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo-text">YD</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="fas fa-user"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#resume" class="nav__link">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Resume</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#hobbies" class="nav__link">
+                            <i class="fas fa-heart"></i>
+                            <span>Hobbies</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Home Section -->
+        <section class="home section" id="home">
+            <div class="home__container container">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Yash Datar</h1>
+                    <h3 class="home__education">Developer | Creator | Innovator</h3>
+                    <p class="home__description">
+                        Welcome to my universe! I'm passionate about creating meaningful digital experiences 
+                        and bringing ideas to life through code.
+                    </p>
+                    <div class="home__buttons">
+                        <a href="#contact" class="button">
+                            <i class="fas fa-paper-plane"></i> Get In Touch
+                        </a>
+                        <a href="#about" class="button button__ghost">
+                            <i class="fas fa-user"></i> Learn More
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="home__img">
+                    <div class="home__img-wrapper">
+                        <img src="assets/images/IMG_0632.jpg" alt="Yash Datar">
+                        <div class="home__img-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-button">
+                    <i class="fas fa-mouse"></i>
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="section__header">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">Get to know me better</span>
+            </div>
+            
+            <div class="about__container container">
+                <div class="about__content">
+                    <div class="about__info">
+                        <h3 class="about__title">Hey there! 👋</h3>
+                        <p class="about__description">
+                            I'm Yash Datar, a passionate developer and creative problem solver. 
+                            I love building things that make a difference and exploring new technologies.
+                        </p>
+                        <p class="about__description">
+                            When I'm not coding, you'll find me diving into my favorite shows like 
+                            <strong>How I Met Your Mother</strong> and <strong>Suits</strong>, or exploring 
+                            the Marvel universe. I believe in continuous learning and pushing boundaries.
+                        </p>
+                        
+                        <div class="about__stats">
+                            <div class="about__stat-box">
+                                <i class="fas fa-code"></i>
+                                <h4>Clean Code</h4>
+                                <p>Writing maintainable solutions</p>
+                            </div>
+                            <div class="about__stat-box">
+                                <i class="fas fa-lightbulb"></i>
+                                <h4>Innovation</h4>
+                                <p>Creative problem solving</p>
+                            </div>
+                            <div class="about__stat-box">
+                                <i class="fas fa-rocket"></i>
+                                <h4>Growth</h4>
+                                <p>Continuous learning</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__skills">
+                        <h3 class="about__skills-title">Technical Skills</h3>
+                        <div class="skills__content">
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML/CSS</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__percentage" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__percentage" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__percentage" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__percentage" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section class="resume section" id="resume">
+            <div class="section__header">
+                <h2 class="section__title">Resume</h2>
+                <span class="section__subtitle">My professional journey</span>
+            </div>
+            
+            <div class="resume__container container">
+                <div class="resume__content">
+                    <!-- Education -->
+                    <div class="resume__section">
+                        <h3 class="resume__section-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Education
+                        </h3>
+                        <div class="resume__items">
+                            <div class="resume__item">
+                                <div class="resume__icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <div class="resume__data">
+                                    <h4>Bachelor's Degree in Computer Science</h4>
+                                    <span class="resume__organization">University Name</span>
+                                    <span class="resume__date">2020 - 2024</span>
+                                    <p class="resume__description">
+                                        Focused on software development, algorithms, and data structures.
+                                        Participated in various coding competitions and hackathons.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience -->
+                    <div class="resume__section">
+                        <h3 class="resume__section-title">
+                            <i class="fas fa-briefcase"></i>
+                            Experience
+                        </h3>
+                        <div class="resume__items">
+                            <div class="resume__item">
+                                <div class="resume__icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <div class="resume__data">
+                                    <h4>Software Developer</h4>
+                                    <span class="resume__organization">Company Name</span>
+                                    <span class="resume__date">2024 - Present</span>
+                                    <p class="resume__description">
+                                        Developing web applications and implementing new features.
+                                        Collaborating with cross-functional teams to deliver quality solutions.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="resume__item">
+                                <div class="resume__icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="resume__data">
+                                    <h4>Intern Developer</h4>
+                                    <span class="resume__organization">Tech Company</span>
+                                    <span class="resume__date">2023 - 2024</span>
+                                    <p class="resume__description">
+                                        Assisted in building responsive web interfaces and fixing bugs.
+                                        Learned industry best practices and agile methodologies.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Certifications -->
+                    <div class="resume__section">
+                        <h3 class="resume__section-title">
+                            <i class="fas fa-certificate"></i>
+                            Certifications
+                        </h3>
+                        <div class="resume__certifications">
+                            <div class="cert__item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Full Stack Web Development</span>
+                            </div>
+                            <div class="cert__item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>JavaScript Algorithms & Data Structures</span>
+                            </div>
+                            <div class="cert__item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Responsive Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resume__download">
+                    <div class="download__card">
+                        <i class="fas fa-file-download"></i>
+                        <h4>Download My Resume</h4>
+                        <p>Get a detailed PDF version of my resume</p>
+                        <a href="assets/resume.pdf" class="button" download>
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="section__header">
+                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">Things I've built</span>
+            </div>
+            
+            <div class="projects__container container">
+                <div class="project__card">
+                    <div class="project__img">
+                        <i class="fas fa-globe project__icon"></i>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Personal Portfolio</h3>
+                        <p class="project__description">
+                            A modern, responsive portfolio website showcasing my work and skills.
+                            Built with HTML, CSS, and JavaScript.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="#" class="project__link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project__link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project__card">
+                    <div class="project__img">
+                        <i class="fas fa-shopping-cart project__icon"></i>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">E-Commerce Platform</h3>
+                        <p class="project__description">
+                            A full-featured e-commerce website with cart functionality,
+                            product filtering, and checkout process.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="#" class="project__link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project__link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project__card">
+                    <div class="project__img">
+                        <i class="fas fa-robot project__icon"></i>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">AI Chatbot</h3>
+                        <p class="project__description">
+                            An intelligent chatbot using natural language processing
+                            to provide automated customer support.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="#" class="project__link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project__link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section class="hobbies section" id="hobbies">
+            <div class="section__header">
+                <h2 class="section__title">Hobbies & Interests</h2>
+                <span class="section__subtitle">What I love beyond coding</span>
+            </div>
+            
+            <div class="hobbies__container container">
+                <div class="hobby__card">
+                    <div class="hobby__icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3 class="hobby__title">TV Shows</h3>
+                    <p class="hobby__description">
+                        Big fan of <strong>How I Met Your Mother</strong> and <strong>Suits</strong>.
+                        Love the storytelling and character development!
+                    </p>
+                </div>
+                
+                <div class="hobby__card">
+                    <div class="hobby__icon">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <h3 class="hobby__title">Marvel Universe</h3>
+                    <p class="hobby__description">
+                        Avid Marvel fan! From comics to movies, I enjoy exploring
+                        the interconnected stories and characters.
+                    </p>
+                </div>
+                
+                <div class="hobby__card">
+                    <div class="hobby__icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="hobby__title">Reading</h3>
+                    <p class="hobby__description">
+                        Love reading tech blogs, sci-fi novels, and staying updated
+                        with the latest industry trends.
+                    </p>
+                </div>
+                
+                <div class="hobby__card">
+                    <div class="hobby__icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="hobby__title">Gaming</h3>
+                    <p class="hobby__description">
+                        Enjoy strategy and adventure games. Gaming helps me
+                        relax and think creatively.
+                    </p>
+                </div>
+                
+                <div class="hobby__card">
+                    <div class="hobby__icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="hobby__title">Music</h3>
+                    <p class="hobby__description">
+                        Music is my coding companion. Love discovering new artists
+                        and different genres.
+                    </p>
+                </div>
+                
+                <div class="hobby__card">
+                    <div class="hobby__icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="hobby__title">Travel</h3>
+                    <p class="hobby__description">
+                        Passionate about exploring new places, cultures, and
+                        trying different cuisines.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="section__header">
+                <h2 class="section__title">Get In Touch</h2>
+                <span class="section__subtitle">Let's connect and create something amazing</span>
+            </div>
+            
+            <div class="contact__container container">
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h3 class="contact__title">Let's talk about everything!</h3>
+                        <p class="contact__description">
+                            Have a project in mind? Want to collaborate? Or just want to say hi?
+                            I'd love to hear from you! Drop me a message and I'll get back to you as soon as possible.
+                        </p>
+                        
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:yash.datar@example.com">yash.datar@example.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__detail">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <span>Your City, Country</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__social">
+                            <h4>Follow Me</h4>
+                            <div class="social__links">
+                                <a href="https://github.com/yourusername" target="_blank" class="social__link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/yourusername" target="_blank" class="social__link">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://twitter.com/yourusername" target="_blank" class="social__link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://instagram.com/yourusername" target="_blank" class="social__link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://codepen.io/yourusername" target="_blank" class="social__link">
+                                    <i class="fab fa-codepen"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder=" " id="name" required>
+                            <label for="name" class="form__label">Your Name</label>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder=" " id="email" required>
+                            <label for="email" class="form__label">Your Email</label>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder=" " id="subject" required>
+                            <label for="subject" class="form__label">Subject</label>
+                        </div>
+                        
+                        <div class="form__group">
+                            <textarea class="form__input form__textarea" placeholder=" " id="message" required></textarea>
+                            <label for="message" class="form__label">Message</label>
+                        </div>
+                        
+                        <button type="submit" class="button button__block">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h3 class="footer__title">Yash Datar</h3>
+            <p class="footer__description">Developer | Creator | Innovator</p>
+            
+            <ul class="footer__links">
+                <li><a href="#home" class="footer__link">Home</a></li>
+                <li><a href="#about" class="footer__link">About</a></li>
+                <li><a href="#resume" class="footer__link">Resume</a></li>
+                <li><a href="#projects" class="footer__link">Projects</a></li>
+                <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+            
+            <div class="footer__social">
+                <a href="https://github.com/yourusername" target="_blank" class="footer__social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="footer__social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank" class="footer__social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            
+            <p class="footer__copy">
+                &copy; 2026 Yash Datar. All rights reserved. Made with <i class="fas fa-heart"></i>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
